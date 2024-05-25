@@ -13,11 +13,8 @@
 		CB7C39CD2C01AEE0003FE92D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB7C39CB2C01AEE0003FE92D /* Main.storyboard */; };
 		CB7C39CF2C01AEE1003FE92D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB7C39CE2C01AEE1003FE92D /* Assets.xcassets */; };
 		CB7C39D22C01AEE1003FE92D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB7C39D02C01AEE1003FE92D /* LaunchScreen.storyboard */; };
-		CB7C39DA2C01B9D9003FE92D /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7C39D92C01B9D9003FE92D /* MainTabBarController.swift */; };
 		CB7C39DC2C01BAED003FE92D /* ChatbotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7C39DB2C01BAED003FE92D /* ChatbotViewController.swift */; };
-		CB7C39DE2C01BB00003FE92D /* AudioLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7C39DD2C01BB00003FE92D /* AudioLibraryViewController.swift */; };
-		CB7C39E02C01BB0B003FE92D /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7C39DF2C01BB0B003FE92D /* CalendarViewController.swift */; };
-		CB7C39E22C01BB15003FE92D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7C39E12C01BB15003FE92D /* SettingsViewController.swift */; };
+		CB7CDA482C02570600B95A0B /* AudioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7CDA472C02570600B95A0B /* AudioTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,11 +26,8 @@
 		CB7C39CE2C01AEE1003FE92D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB7C39D12C01AEE1003FE92D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB7C39D32C01AEE1003FE92D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB7C39D92C01B9D9003FE92D /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		CB7C39DB2C01BAED003FE92D /* ChatbotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatbotViewController.swift; sourceTree = "<group>"; };
-		CB7C39DD2C01BB00003FE92D /* AudioLibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioLibraryViewController.swift; sourceTree = "<group>"; };
-		CB7C39DF2C01BB0B003FE92D /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
-		CB7C39E12C01BB15003FE92D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		CB7CDA472C02570600B95A0B /* AudioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,17 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				CB62EE092C01D93E00325359 /* APIManager.swift */,
-				CB7C39C52C01AEE0003FE92D /* AppDelegate.swift */,
-				CB7C39C72C01AEE0003FE92D /* SceneDelegate.swift */,
-				CB7C39CB2C01AEE0003FE92D /* Main.storyboard */,
 				CB7C39DB2C01BAED003FE92D /* ChatbotViewController.swift */,
-				CB7C39DD2C01BB00003FE92D /* AudioLibraryViewController.swift */,
-				CB7C39DF2C01BB0B003FE92D /* CalendarViewController.swift */,
-				CB7C39E12C01BB15003FE92D /* SettingsViewController.swift */,
-				CB7C39D92C01B9D9003FE92D /* MainTabBarController.swift */,
+				CB7CDA472C02570600B95A0B /* AudioTableViewCell.swift */,
+				CB7C39CB2C01AEE0003FE92D /* Main.storyboard */,
 				CB7C39CE2C01AEE1003FE92D /* Assets.xcassets */,
 				CB7C39D02C01AEE1003FE92D /* LaunchScreen.storyboard */,
 				CB7C39D32C01AEE1003FE92D /* Info.plist */,
+				CB7C39C52C01AEE0003FE92D /* AppDelegate.swift */,
+				CB7C39C72C01AEE0003FE92D /* SceneDelegate.swift */,
 			);
 			path = "Hackathon-nF";
 			sourceTree = "<group>";
@@ -154,12 +145,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB62EE0A2C01D93E00325359 /* APIManager.swift in Sources */,
-				CB7C39E02C01BB0B003FE92D /* CalendarViewController.swift in Sources */,
-				CB7C39DE2C01BB00003FE92D /* AudioLibraryViewController.swift in Sources */,
-				CB7C39E22C01BB15003FE92D /* SettingsViewController.swift in Sources */,
 				CB7C39C62C01AEE0003FE92D /* AppDelegate.swift in Sources */,
-				CB7C39DA2C01B9D9003FE92D /* MainTabBarController.swift in Sources */,
 				CB7C39DC2C01BAED003FE92D /* ChatbotViewController.swift in Sources */,
+				CB7CDA482C02570600B95A0B /* AudioTableViewCell.swift in Sources */,
 				CB7C39C82C01AEE0003FE92D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

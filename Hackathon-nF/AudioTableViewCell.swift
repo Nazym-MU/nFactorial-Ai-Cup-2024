@@ -1,24 +1,26 @@
 import UIKit
 
+protocol AudioCellDelegate: AnyObject {
+    func didTapPlayButton(in cell: AudioTableViewCell)
+}
+
 class AudioTableViewCell: UITableViewCell {
+    
     weak var delegate: AudioCellDelegate?
 
     @IBOutlet weak var playButton: UIButton!
-    @IBOutlet weak var pauseButton: UIButton!
-    @IBOutlet weak var progressSlider: UISlider!
+    @IBOutlet weak var titleLabel: UILabel!
+    
+    @IBAction func playButtonTapped(_ sender: UIButton) {
+        delegate?.didTapPlayButton(in: self)
+        playButton.isEnabled = false
+    }
+    
+    func setPlayButton(enabled: Bool) {
+            playButton.isEnabled = enabled
+        }
     
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
-
-}
- 
-protocol AudioCellDelegate: AnyObject {
-    func didTapPlay(for cell: AudioTableViewCell)
-    func didTapPause(for cell: AudioTableViewCell)
-    func sliderValueChanged(to value: Float, for cell: AudioTableViewCell)
 }

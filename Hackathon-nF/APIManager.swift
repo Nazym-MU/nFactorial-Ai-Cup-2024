@@ -20,14 +20,14 @@ struct Message: Codable {
 class APIManager {
     static let shared = APIManager()
     private var apiKey: String {
-            guard let key = Bundle.main.object(forInfoDictionaryKey: "apiKey") as? String else {
+            guard let key = Bundle.main.object(forInfoDictionaryKey: "APIKey") as? String else {
                 fatalError("API Key not set in plist for this environment")
             }
             return key
         }
 
         private var bingKey: String {
-            guard let key = Bundle.main.object(forInfoDictionaryKey: "bingKey") as? String else {
+            guard let key = Bundle.main.object(forInfoDictionaryKey: "BingKey") as? String else {
                 fatalError("Bing Key not set in plist for this environment")
             }
             return key
